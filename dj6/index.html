@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Оценочная компания</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style>.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;-moz-backface-visibility:hidden}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;cursor:hand;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:-webkit-grab;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.owl-carousel .animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{-webkit-animation-name:fadeOut;animation-name:fadeOut}@-webkit-keyframes fadeOut{0%{opacity:1}100%{opacity:0}}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{-webkit-transition:height .5s ease-in-out;transition:height .5s ease-in-out}.owl-carousel .owl-item .owl-lazy{opacity:0;-webkit-transition:opacity .4s ease;transition:opacity .4s ease}.owl-carousel .owl-item img.owl-lazy{-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;-webkit-transition:-webkit-transform .1s ease;transition:-webkit-transform .1s ease;transition:transform .1s ease;transition:transform .1s ease,-webkit-transform .1s ease}.owl-carousel .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);-webkit-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;-webkit-transition:opacity .4s ease;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1;height:100%;width:100%}body{font-size:16px;min-width:320px;position:relative;line-height:1.5;font-family:RobotoRegular,sans-serif;overflow-x:hidden;color:#111}.hidden{display:none}a{outline:0!important}b,strong{font-family:RobotoBold,sans-serif;font-weight:400}.button,.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:RobotoCondensedBold,sans-serif;font-weight:400;text-transform:uppercase}.text_right{text-align:right}.text_left{text-align:left}.text_center{text-align:center}.isnohome .top_line .sf-menu>li>a{padding:15px 28px}.isnohome .top_pannel{padding:25px 0}.isnohome .slider .slide{padding:120px 0 40px}.isnohome .slider .slide h2{font-size:2.25em}.isnohome .owl-dots,.isnohome .slide_img_wrap,.isnohome .slider .slide_wrap p{display:none}.isnohome .slide_content .col-md-6{width:100%}.isnohome .slider_wrap .slider_nav div{top:210px}.content{padding:60px 0}.content article{max-width:100%}.content article h1{margin-top:0}.main_aside .top_pannel_box{margin:30px 0}.main_aside .top_pannel_box h4{font-family:RobotoCondensedBold,sans-serif;font-size:1.375em;margin-bottom:20px}.main_aside .top_pannel_box li{display:block;max-width:100%;opacity:1;padding:0}.main_aside .top_pannel_box li.active a{background-color:#fc0;color:#fff;font-family:RobotoBold,sans-serif}.main_aside .top_pannel_box li.active a .fa{color:#ffeb99}.main_aside .top_pannel_box li a{color:#111;font-size:1.125em;display:block;padding-bottom:8px;padding-top:8px;padding-left:20px;border-bottom:#e0e0e0 1px solid;text-transform:uppercase;-webkit-transition:all .5s ease;transition:all .5s ease;text-indent:10px}.main_aside .top_pannel_box li a:hover{color:#22133e}.main_aside .top_pannel_box li a .fa{font-size:14px;color:#fc0;top:13px;margin-right:5px}.top_line{background-color:#22133e;text-align:center;border-bottom:#2f1a55 1px solid;position:relative;z-index:2}.top_line a{color:#fff}.top_line li,.top_line ul{list-style-type:none;padding:0;margin:0}.top_line .sf-menu{margin:0 auto -6px;float:none;display:inline-block;font-family:RobotoCondensedRegular,sans-serif;font-size:.9375em;background-color:#22133e}.top_line .sf-menu>li{background-color:transparent}.top_line .sf-menu>li.active{background-color:#1c0f32}.top_line .sf-menu>li.active>a{color:#fc0}.top_line .sf-menu>li a{color:#fff;border:none;padding:25px 28px}.top_line .sf-menu>li a .fa{font-size:11px;margin-left:2px}.top_line .sf-menu>li:hover{background-color:#1c0f32}.top_line .sf-menu>li:hover>a{color:#fc0}.top_line .sf-menu>li ul li{background-color:#22133e}.top_line .sf-menu>li ul li:hover>a{color:#fc0}.top_line .sf-menu>li ul li a{border-bottom:#2d1952 1px solid;border-top:none;padding:10px 20px;color:#fff;text-align:left}.top_pannel{background-color:rgba(38,21,70,.8);color:#fff;padding:50px 0;position:absolute;width:100%;z-index:1;-webkit-box-shadow:rgba(255,255,255,.03) 0 5px 0 5px;box-shadow:rgba(255,255,255,.03) 0 5px 0 5px}.top_pannel_content{position:relative;z-index:1}.top_pannel::before{position:absolute;content:'';top:0;left:0;bottom:0;right:0;background-image:url(../img/top-pannel-bg.jpg);z-index:0;opacity:.16}.top_pannel_box h4{font-family:RobotoCondensedRegular,sans-serif;font-size:.9375em;margin-top:0;position:relative}.top_pannel_box h4::after{content:'';position:absolute;height:1px;width:100%;background-color:#fc0;left:0;bottom:-9px;opacity:.4}.top_pannel_box li,.top_pannel_box ul{padding:0;margin:0;list-style-type:none}.top_pannel_box li{display:inline-block;max-width:48%;opacity:.4;font-size:.75em;padding:0 10px 0 22px;position:relative}.top_pannel_box li:only-child{max-width:100%}.top_pannel_box li .fa{font-size:16px;position:absolute;left:0;top:6px}.logo{position:relative;top:3px}.logo img{max-width:100%}.top_phone{font-size:1.1875em;font-family:RobotoCondensedRegular,sans-serif;margin-top:-3px}.top_phone span{font-size:.75em;opacity:.3}.top_email{font-size:.875em}.top_email a{color:#fff;text-decoration:underline}.top_email span{opacity:.3}.top_email .fa,.top_phone .fa{margin-right:3px}.button{color:#111;background-color:#fc0;-webkit-border-radius:2px;border-radius:2px;font-size:1em;padding:10px 35px;position:relative;-webkit-transition:background-color .5s ease;transition:background-color .5s ease;border:none}.button:hover{background-color:#ffdb4d}.button:active{background-color:#cca300}.button::after{position:absolute;content:'';background-color:#cca300;width:100%;bottom:0;height:3px;left:0;-webkit-border-bottom-right-radius:2px;border-bottom-right-radius:2px;-webkit-border-bottom-left-radius:2px;border-bottom-left-radius:2px}.button:focus,.button:hover{text-decoration:none;color:#222}.button_small{font-size:.875em;padding:6px 18px}.button_small::after{height:2px}.top_button{margin-top:22px}.slider_wrap{position:relative;display:none}.slider_wrap .slider_nav_container{position:relative}.slider_wrap .slider_nav{color:#fff;font-size:36px;position:absolute;width:100%;z-index:2}.slider_wrap .slider_nav div{cursor:pointer;position:absolute;top:390px}.slider_wrap .slider_nav div:last-child{right:0}.slider{top:0;width:100%;overflow:hidden}.slider .owl-dots{position:absolute;bottom:50px;width:100%;text-align:center}.slider .owl-dots .owl-dot{display:inline-block;margin:0 3px;width:14px;height:14px;background-color:#0d0717;-webkit-border-radius:10em;border-radius:10em;cursor:pointer;-webkit-transition:background-color .25s ease;transition:background-color .25s ease}.slider .owl-dots .owl-dot.active{background-color:#fc0}.slider .slide_wrap{float:left}.slider .slide_wrap.active h2,.slider .slide_wrap.active p{opacity:1;left:0}.slider .slide_wrap.active .slide_img_wrap{opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}.slider .slide{color:#fff;padding-bottom:130px;position:relative;padding-top:220px}.slider .slide h2{font-family:RobotoCondensedLight,sans-serif;font-size:3em;margin-top:0;line-height:1.1875em;margin-bottom:20px;position:relative;left:100px;opacity:0;-webkit-transition:all 1s ease;transition:all 1s ease}.slider .slide h2:first-line{color:#fc0}.slider .slide p{font-family:RobotoLight,sans-serif;opacity:.75;margin-bottom:40 px;position:relative;left:50px;opacity:0;-webkit-transition:all 1.5s ease;transition:all 1.5s ease;-webkit-transition-delay:.15s;transition-delay:.15s}.slider .slide_bg{position:absolute;background-size:cover;top:0;left:0;right:0;bottom:0}.slider .slide_bg::before{content:'';background-color:#22133e;top:0;left:0;width:100%;height:100%;position:absolute;opacity:.85}.slider .slide_content{position:relative;z-index:1;padding-top:80px}.slide_img_wrap{padding-top:12px;opacity:0;-webkit-transform:scale(.8);-ms-transform:scale(.8);transform:scale(.8);-webkit-transition:all 1s ease;transition:all 1s ease;-webkit-transition-delay:.25s;transition-delay:.25s}.slide_img_wrap img{max-width:100%}.toggle-mnu{display:block;width:28px;height:28px;float:left}.toggle-mnu span:after,.toggle-mnu span:before{content:"";position:absolute;left:0;top:9px}.toggle-mnu span:after{top:18px}.toggle-mnu span{position:relative;display:block}.toggle-mnu span,.toggle-mnu span:after,.toggle-mnu span:before{width:100%;height:2px;background-color:#22133e;-webkit-transition:all .3s;transition:all .3s;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-border-radius:2px;border-radius:2px}.toggle-mnu.on span{background-color:transparent}.toggle-mnu.on span:before{-webkit-transform:rotate(45deg) translate(-1px,0);-ms-transform:rotate(45deg) translate(-1px,0);transform:rotate(45deg) translate(-1px,0)}.toggle-mnu.on span:after{-webkit-transform:rotate(-45deg) translate(6px,-7px);-ms-transform:rotate(-45deg) translate(6px,-7px);transform:rotate(-45deg) translate(6px,-7px)}.mobile_mnu{color:#22133e;background-color:#fc0;position:relative;z-index:2;cursor:pointer;padding:8px 15px 5px}.mobile_mnu b{display:block;text-align:center;font-family:RobotoRegular,sans-serif;font-size:.9375em}.sect_teaser{background-color:#22133e;color:#fff;padding:28px 0 18px}.teaser_count{width:43px;height:43px;position:relative;display:inline-block}.teaser_count .fa{font-size:48px;color:#371f65}.teaser_count .teaser_number{position:absolute;top:8px;width:100%;text-align:center;font-family:RobotoCondensedBold,sans-serif;font-size:22px;color:#fc0}.teaser_text{display:inline-block;width:165px;padding:5px;font-family:RobotoCondensedLight,sans-serif;line-height:20px;opacity:.28}</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<!-- <script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script> -->
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS (если комп не поддерживают ДЖС-->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+
+<body class="ishome">
+
+	<header class="main_head">
+
+		<div class="mobile_mnu hidden-md hidden-lg">
+			<a href="#" class="toggle-mnu hidden-lg"><span></span></a> <b>Меню</b>
+		</div>
+
+		<nav class="top_line">
+
+			<div class="container">
+
+				<ul class="sf-menu"> <!-- класс суперфиша -->
+					<li class="active"><a href="#">Главная</a></li>
+					<li><a href="#">О Компании</a></li>
+					<li>
+						<a href="#">Услуги и стоимость <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul>
+							<li>
+								<a href="#">Подменю1 Подменю1 Подменю1</a>
+								<ul>
+									<li><a href="#">Подменю11</a></li>
+									<li><a href="#">Подменю22</a></li>
+									<li><a href="#">Подменю33</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Подменю2</a></li>
+							<li><a href="#">Подменю3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Сертификаты</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+
+		</nav>
+
+		<section class="top_pannel">
+
+			<div class="container">
+				<div class="top_pannel_content">
+					<div class="row">
+
+						<div class="col-md-2 col-sm-6 col-xs-4">
+							<a href="#" class="logo"><img src="img/logo.png" alt="Юрдис"></a>
+						</div>
+
+						<div class="col-md-4">
+							<div class="top_pannel_box hidden-sm hidden-xs">
+								<h4>Адреса организаций:</h4>
+								<ul>
+									<li><i class="fa fa-map-marker"></i> г	. Москва, ул. Соколовского, д. 3, офис № 305</li>
+									<li><i class="fa fa-map-marker"></i> г. Москва, ул. Соколовского, д. 6, офис № 310</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="top_pannel_box hidden-sm hidden-xs">
+								<h4>Время работы:</h4>
+								<ul>
+									<li><i class="fa fa-clock-o"></i>пн-пт с 10-00 - 18-00;<br>перерыв с 13-00 до 14-00;<br>сб-вс выходной день.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-8">
+							<div class="text_right">
+								<div class="top_phone"><span><i class="fa fa-phone"></i> 8 (929)</span> 333-777-88, 333-777-88</div>
+								<div class="top_email hidden-sm hidden-xs"><span><i class="fa fa-envelope"></i>E-Mail:</span> <a href="mailto:emailsender@gmail.com">emailsender@gmail.com</a></div>
+								<div class="top_button">
+									<a href="#callback" class="button button_small popup-with-move-anim" data-form="Верхняя форма">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+
+			<div class="slider_wrap">
+				<div class="container">
+					<div class="slider_nav_container">
+						<div class="slider_nav">
+							<div class="prev"><i class="fa fa-angle-left"></i></div>
+							<div class="next"><i class="fa fa-angle-right"></i></div>
+						</div>
+					</div>
+				</div>
+
+			<div class="slider">
+
+				<!-- Start slide -->
+				<div class="slide">
+					<div class="slide_bg" style="background-image: url(img/slide-1.jpg);"></div>
+					<div class="slide_content">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-10 col-sm-9 col-xs-offset-1">
+									<div class="row">
+										<div class="col-md-6">
+											<h2>Первая оценочная компания Москвы</h2>
+											<p>Далеко-далеко за словесными горами в стране, гластных и согласных живут рыбные тексты. Рукопись предупреждал всемогущая там не последний.</p>
+											<a href="#" class="button">Список услуг</a>
+										</div>
+										<div class="col-md-6 hidden-sm hidden-xs">
+											<div class="slide_img_wrap">
+												<img src="img/slide-img-1.png" alt="Alt">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End slide -->
+				<!-- Start slide -->
+				<div class="slide">
+					<div class="slide_bg" style="background-image: url(img/slide-1.jpg);"></div>
+					<div class="slide_content">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-10 col-sm-9 col-xs-offset-1">
+									<div class="row">
+										<div class="col-md-6">
+											<h2>Первая оценочная компания Москвы</h2>
+											<p>Далеко-далеко за словесными горами в стране, гластных и согласных живут рыбные тексты. Рукопись предупреждал всемогущая там не последний.</p>
+											<a href="#" class="button">Список услуг</a>
+										</div>
+										<div class="col-md-6 hidden-sm hidden-xs">
+											<div class="slide_img_wrap">
+												<img src="img/slide-img-1.png" alt="Alt">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End slide -->
+				<!-- Start slide -->
+				<div class="slide">
+					<div class="slide_bg" style="background-image: url(img/slide-1.jpg);"></div>
+					<div class="slide_content">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-10 col-sm-9 col-xs-offset-1">
+									<div class="row">
+										<div class="col-md-6">
+											<h2>Первая оценочная компания Москвы</h2>
+											<p>Далеко-далеко за словесными горами в стране, гластных и согласных живут рыбные тексты. Рукопись предупреждал всемогущая там не последний.</p>
+											<a href="#" class="button">Список услуг</a>
+										</div>
+										<div class="col-md-6 hidden-sm hidden-xs">
+											<div class="slide_img_wrap">
+												<img src="img/slide-img-1.png" alt="Alt">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			</div>
+			<!-- End Slide -->
+
+		</section>
+	</header>
+
+	<!-- Тизер  -->
+	<section class="sect_teaser">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-3">
+					<div class="teaser_item">
+						<div class="teaser_count">
+							<i class="fa fa-star"></i>
+							<span class="teaser_number">10</span>
+						</div>
+						<div class="teaser_text">Мы уже 10 лет на рынке оценки Москвы</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">					
+					<div class="teaser_item">
+						<div class="teaser_count">
+							<i class="fa fa-star"></i>
+							<span class="teaser_number">124</span>
+						</div>
+						<div class="teaser_text">У нас 124 довольных компаний-клиентов</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="teaser_item">
+						<div class="teaser_count">
+							<i class="fa fa-star"></i>
+							<span class="teaser_number">12</span>
+						</div>
+						<div class="teaser_text">Мы имеем 12 офисов в Москве и подмосковье</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="teaser_item">
+						<div class="teaser_count">
+							<i class="fa fa-star"></i>
+							<span class="teaser_number">5</span>
+						</div>
+						<div class="teaser_text">Работаем более 5 лет с крупными клиентами</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Конец Тизер  -->
+
+	<!-- Секция Сервисы -->
+	<section class="sect_services">
+		<div class="container">
+			<div class="row">
+				<!-- 1 -->
+				<div class="col-md-3 col-sm-6">
+					<div class="service_item">
+						<a href="#" class="service_item_img" style="background-image: url(img/services/1.jpg);">
+							<i class="fa fa-eye"></i>
+						</a>
+						<h4>Оценка недвижимости</h4>
+						<div class="service_item_stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="service_item_price">
+							<i class="fa fa-tags"></i> от <span>1 700</span>руб.
+						</div>
+						<a href="#" class="button">Подробнее</a>
+					</div>
+				</div>
+				<!-- 2 -->
+				<div class="col-md-3 col-sm-6">
+					<div class="service_item">
+						<a href="#" class="service_item_img" style="background-image: url(img/services/2.jpg);">
+							<i class="fa fa-eye"></i>
+						</a>
+						<h4>Оценка земли</h4>
+						<div class="service_item_stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="service_item_price">
+							<i class="fa fa-tags"></i> от <span>25 000</span>руб.
+						</div>
+						<a href="page.html" class="button">Подробнее</a>
+					</div>
+				</div>
+				<!-- 3 -->
+				<div class="col-md-3 col-sm-6">
+					<div class="service_item">
+						<a href="#" class="service_item_img" style="background-image: url(img/services/3.jpg);">
+							<i class="fa fa-eye"></i>
+						</a>
+						<h4>Оспаривание кадастровой стоимости</h4>
+						<div class="service_item_stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="service_item_price">
+							<i class="fa fa-tags"></i> от <span>17 000</span>руб.
+						</div>
+						<a href="#" class="button">Подробнее</a>
+					</div>
+				</div>
+				<!-- 4 -->
+				<div class="col-md-3 col-sm-6">
+					<div class="service_item">
+						<a href="#" class="service_item_img" style="background-image: url(img/services/4.jpg);">
+							<i class="fa fa-eye"></i>
+						</a>
+						<h4>Оценка бизнеса</h4>
+						<div class="service_item_stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="service_item_price">
+							<i class="fa fa-tags"></i> от <span>8 500</span>руб.
+						</div>
+						<a href="#" class="button">Подробнее</a>
+					</div>
+				</div>
+				<!-- 5 -->
+				<div class="col-md-3 col-sm-6">
+					<div class="service_item">
+						<a href="#" class="service_item_img" style="background-image: url(img/services/5.jpg);">
+							<i class="fa fa-eye"></i>
+						</a>
+						<h4>Оценка инвестиционных проектов</h4>
+						<div class="service_item_stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="service_item_price">
+							<i class="fa fa-tags"></i> от <span>1 950</span>руб.
+						</div>
+						<a href="#" class="button">Подробнее</a>
+					</div>
+				</div>
+				<!-- 6 -->
+				<div class="col-md-3 col-sm-6">
+					<div class="service_item">
+						<a href="#" class="service_item_img" style="background-image: url(img/services/6.jpg);">
+							<i class="fa fa-eye"></i>
+						</a>
+						<h4>Оценка нематериальных активов</h4>
+						<div class="service_item_stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="service_item_price">
+							<i class="fa fa-tags"></i> от <span>999</span>руб.
+						</div>
+						<a href="#" class="button">Подробнее</a>
+					</div>
+				</div>
+				<!-- 7 -->
+				<div class="col-md-3 col-sm-6">
+					<div class="service_item">
+						<a href="#" class="service_item_img" style="background-image: url(img/services/7.jpg);">
+							<i class="fa fa-eye"></i>
+						</a>
+						<h4>Оценка ценных бумаг</h4>
+						<div class="service_item_stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="service_item_price">
+							<i class="fa fa-tags"></i> от <span>143 600</span>руб.
+						</div>
+						<a href="#" class="button">Подробнее</a>
+					</div>
+				</div>
+				<!-- 8 -->
+				<div class="col-md-3 col-sm-6">
+					<div class="service_item">
+						<a href="#" class="service_item_img" style="background-image: url(img/services/8.jpg);">
+							<i class="fa fa-eye"></i>
+						</a>
+						<h4>Оценка переоценка</h4>
+						<div class="service_item_stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="service_item_price">
+							<i class="fa fa-tags"></i> от <span>1 700</span>руб.
+						</div>
+						<a href="#" class="button">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Конец Секция Сервисы -->
+
+	<!--  Секция Новости -->
+
+	<section class="sect_news sect_universal">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-3">
+					<div class="first_col clearfix">
+						<h2>Новости компании:</h2>
+						<a href="#" class="button">Все новости</a>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="new_item">
+						<a href="#" class="new_item_img" style="background-image: url(img/services/2.jpg);">
+							<i class="fa fa-eye"></i>
+						</a>
+						<h4>Заголовок новости номер один</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur elit. Maxime?..</p>
+						<a href="#" class="button">Подробнее</a>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="new_item">
+						<a href="#" class="new_item_img" style="background-image: url(img/services/4.jpg);">
+							<i class="fa fa-eye"></i>
+						</a>
+						<h4>Заголовок номер два</h4>
+						<p>Lorem ipsum dolor. Maxime quos sapiente dicta hic et illum?..</p>
+						<a href="#" class="button">Подробнее</a>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="new_item">
+						<a href="#" class="new_item_img" style="background-image: url(img/services/7.jpg);">
+							<i class="fa fa-eye"></i>
+						</a>
+						<h4>Заголовок новости номер 3</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur elit. Maxime quos sapiente dicta hic et illum?..</p>
+						<a href="#" class="button">Подробнее</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- Конец Секция Новости -->
+
+	<!-- Секция ссылки-->	
+
+	<section class="sect_universal sect_links">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-3">
+					<div class="first_col clearfix">
+						<h2>Ссылки на гос. порталы:</h2>
+						<a href="#" class="button">Все порталы</a>
+					</div>
+				</div>
+
+				<div class="col-md-9">
+					<div class="row">
+
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="link_item">
+								<img src="img/rusmy.svg" alt="link">
+								<span class="h4">Правительство Москвы Правителтво Москвы Москвы</span>
+							</a>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="link_item">
+								<img src="img/rusmy.svg" alt="link">
+								<span class="h4">Правительство Москвы Правителтво</span>
+							</a>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="link_item">
+								<img src="img/rusmy.svg" alt="link">
+								<span class="h4">Правительство Москвы Правителтво Москвы Москвы</span>
+							</a>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="link_item">
+								<img src="img/rusmy.svg" alt="link">
+								<span class="h4">Правительство Москвы Правителтво</span>
+							</a>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="link_item">
+								<img src="img/rusmy.svg" alt="link">
+								<span class="h4">Правительство Москвы Правителтво Москвы Москвы</span>
+							</a>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="link_item">
+								<img src="img/rusmy.svg" alt="link">
+								<span class="h4">Правительство Москвы Правителтво</span>
+							</a>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="link_item">
+								<img src="img/rusmy.svg" alt="link">
+								<span class="h4">Правительство Москвы Правителтво Москвы Москвы</span>
+							</a>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="link_item">
+								<img src="img/rusmy.svg" alt="link">
+								<span class="h4">Правительство Москвы Правителтво</span>
+							</a>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="link_item">
+								<img src="img/rusmy.svg" alt="link">
+								<span class="h4">Правительство Москвы Правителтво Москвы Москвы</span>
+							</a>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="link_item">
+								<img src="img/rusmy.svg" alt="link">
+								<span class="h4">Правительство Москвы Правителтво</span>
+							</a>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="link_item">
+								<img src="img/rusmy.svg" alt="link">
+								<span class="h4">Правительство Москвы Правителтво Москвы Москвы</span>
+							</a>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="link_item">
+								<img src="img/rusmy.svg" alt="link">
+								<span class="h4">Правительство Москвы Правителтво</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Футер -->
+	<footer class="main_foot">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-2 col-sm-6">
+					<a href="#" class="logo"><img src="img/logo.png" alt="Юрдис"></a>
+					<p class="footer_about">Оценка любого имущества, активов, бизнеса, убытков, оспаривание на дастровой соимости, ценнных бумаг в Москве и Москвоской области</p>
+				</div>
+
+				<div class="col-md-3 col-md-push-7 col-sm-6">
+					<div class="text_right">
+						<div class="top_phone"><span><i class="fa fa-phone"></i> 8 (929)</span> 333-777-88, 333-777-88</div>
+						<div class="top_email"><span><i class="fa fa-envelope"></i>E-Mail:</span> <a href="mailto:emailsender@gmail.com">emailsender@gmail.com</a></div>
+						<div class="top_button">
+							<a href="#callback" class="button button_small popup-with-move-anim" data-form="Нижняя форма">Заказать звонок</a>
+						</div>
+					</div>
+					<div class="text_right developer hidden-xs">
+						<a href="#">
+							<span>Создание сайта</span>
+							<img src="img/cwebs.jpg" alt="Cwebs">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-md-offset-1 col-md-pull-3 col-sm-12">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="top_pannel_box">
+								<h4>Адреса организаций:</h4>
+								<ul>
+									<li><i class="fa fa-map-marker"></i> г	. Москва, ул. Соколовского, д. 3, офис № 305</li>
+									<li><i class="fa fa-map-marker"></i> г. Москва, ул. Соколовского, д. 6, офис № 310</li>
+								</ul>
+							</div>
+							<div class="top_pannel_box">
+								<h4>Время работы:</h4>
+								<ul>
+									<li><i class="fa fa-clock-o"></i>пн-пт с 10-00 - 18-00;<br>перерыв с 13-00 до 14-00;<br>сб-вс выходной день.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="top_pannel_box">
+								<h4>Услуги компании:</h4>
+								<ul class="menu_type_2">
+									<li><a href="#"><span class="fa fa-check"></span>Оценка недвижимости</a></li>
+									<li><a href="#"><span class="fa fa-check"></span>Оценка земли</a></li>
+									<li><a href="#"><span class="fa fa-check"></span>Оценка ущербы</a></li>
+									<li><a href="#"><span class="fa fa-check"></span>Оспаривание кадастровой стоимости</a></li>
+									<li><a href="#"><span class="fa fa-check"></span>Оценка инвестиционных проектов</a></li>
+									<li><a href="#"><span class="fa fa-check"></span>Оценка нематериальных активов</a></li>
+									<li><a href="#"><span class="fa fa-check"></span>Оценка ценных бумаг</a></li>
+									<li><a href="#"><span class="fa fa-check"></span>Переоценка</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<div class="hidden">
+		
+		<form class="callback popup_form zoom-anim-dialog" id="callback">
+			<div class="success"> Спасибо за заявку!<br>
+			Наши менеджеры свяжуться с вами в блишайтее время.</div>
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Юрдис">
+			<input type="hidden" name="admin_email" value="bon9@i.ua"> <!-- прописать почту в мейл.пхп если очкуешь взлома -->
+			<input type="hidden" name="form_subject" value="Новая заявка с сайта Юрдис">
+			<!-- END Hidden Required Fields -->
+
+			<h3>Заказать звонок</h3>
+			<label>
+				<span>Ваше имя: </span>
+				<input type="text" name="Имя" placeholder="Введите ваше имя...">
+			</label>
+			<label>
+				<span>Ваш телефон: </span>
+				<input type="text" name="Телефон" placeholder="Введите ваш телефон..." required>
+			</label>
+			<div class="text_center">
+				<button class="button">Отправить</button>
+			</div>
+			<input class="formname" type="hidden" name="Форма">
+		</form>
+
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+
+<!-- Load Scripts Start -->
+<script>var scr = {"scripts":[
+{"src" : "js/libs.js", "async" : false},
+{"src" : "js/common.js", "async" : false}
+]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+</script>
+<!-- Load Scripts End -->
+
+</body>
+</html>
