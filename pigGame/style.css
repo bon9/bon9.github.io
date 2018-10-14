@@ -23,7 +23,7 @@ body {
     font-weight: 300;
     position: relative;
     height: 100vh;
-    color: #555;
+    color: #436c34;
 }
 
 .wrapper {
@@ -41,7 +41,7 @@ body {
 .player-1-panel {
     width: 50%;
     float: left;
-    height: 600px;
+    height: 650px;
     padding: 100px;
 }
 
@@ -66,25 +66,25 @@ body {
     text-align: center;
     font-size: 80px;
     font-weight: 100;
-    color: #EB4D4D;
+    color: #00b4fb;
     margin-bottom: 130px;
 }
 
-.active { background-color: #f7f7f7; }
+.active { background-color: #f8f40f2c; }
 .active .player-name { font-weight: 300; }
 
 .active .player-name::after {
     content: "\2022";
     font-size: 47px;
     position: absolute;
-    color: #EB4D4D;
+    color: #1bbadc;
     top: -7px;
     right: 10px;
     
 }
 
 .player-current-box {
-    background-color: #EB4D4D;
+    background-color: #00b4fb;
     color: #fff;
     width: 40%;
     margin: 0 auto;
@@ -96,7 +96,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 10px;
     font-size: 12px;
-    color: #222;
+    color: #333;
 }
 
 .player-current-score {
@@ -108,7 +108,7 @@ button {
     width: 200px;
     left: 50%;
     transform: translateX(-50%);
-    color: #555;
+    color: #436c34;
     background: none;
     border: none;
     font-family: Lato;
@@ -119,6 +119,31 @@ button {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.enter-max-score {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 510px;
+}
+
+input {
+	border: 1px solid #fa6560;
+	font-size: 15px;
+	font-family: Lato;
+	padding: 5px;
+	margin: 10px 0 5px 0;
+	width: 100px;
+	text-align: center;
+	color: #436c34;
+}
+input:focus {
+	outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 button:hover { font-weight: 600; }
 button:hover i { margin-right: 20px; }
 
@@ -127,7 +152,7 @@ button:focus {
 }
 
 i {
-    color: #EB4D4D;
+    color: #fa6560;
     display: inline-block;
     margin-right: 15px;
     font-size: 32px;
@@ -140,15 +165,25 @@ i {
 .btn-new { top: 45px;}
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
+.btn-score {
+	background-color:#fa6560;
+	color: #fff;
+	font-size: 15px;
+	margin-top: 10px;
+}
 
-.dice {
+.dice, .dice-1 {
     position: absolute;
     left: 50%;
-    top: 178px;
+    top: 150px;
     transform: translateX(-50%);
     height: 100px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
+.dice-1 {
+	top: 280px;
+}
+
 .winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; }
+.winner .player-name { font-weight: 300; color: #1bbadc; }
