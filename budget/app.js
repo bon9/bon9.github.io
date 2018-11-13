@@ -18,7 +18,7 @@ var budgetController = (function () {
 
 	Expense.prototype.getPercentage = function () { //вовращаем для видимости
 		return this.percentage;
-	}
+	};
 
 	var Income = function (id, description, value) { //доходы
 		this.id = id;
@@ -48,7 +48,6 @@ var budgetController = (function () {
 	};
 
 	return {
-
 		// добавления итема в структуру и возврат итема
 		addItem: function (type, des, val) {
 			var newItem, ID;
@@ -130,9 +129,19 @@ var budgetController = (function () {
 			}
 		},
 
-		testItem: function () {
-			console.log(data);
-		}
+		// запись в localStorage
+		persistData() {
+			localStorage.setItem('dataBudget', JSON.stringify(data));
+		},
+
+		// чтение из localStorage
+		readStorage() {
+			return JSON.parse(localStorage.getItem('dataBudget'));
+		},
+
+		// testing
+		data
+
 	};
 
 })();
@@ -253,13 +262,17 @@ var UIController = (function () {
 		displayPercentages: function (percentages) {
 			var fields = document.querySelectorAll(DOMstrings.expensesPercLabel);
 
+			/* var nodeListForEach = function (list, callback) {
+					for (var i = 0; i < list.length; i++) {
+						callback(list[i], i);
+					}
+				}; */
 			nodeListForEach(fields, function (current, index) {
 				if (percentages[index] > 0) {
 					current.textContent = percentages[index] + '%';
 				} else {
 					current.textContent = '---';
 				}
-
 			});
 		},
 
@@ -291,7 +304,6 @@ var UIController = (function () {
 			return DOMstrings;
 		}
 	};
-
 
 })();
 
@@ -364,6 +376,10 @@ var controller = (function (budgetCtrl, UICtrl) {
 
 			// 6. Calculate and update percentages
 			updatePercentage();
+
+			// Persist data
+			budgetController.persistData();
+
 		}
 	};
 
@@ -390,22 +406,48 @@ var controller = (function (budgetCtrl, UICtrl) {
 			// 4. Calculate and update percentages
 			updatePercentage();
 
+			// Persist data
+			budgetController.persistData();
 		}
 
-		// console.log(event.target.closest('.item'));
+	};
 
+	// Функция вывода из localsorage
+	const getLocalStorage = (data, type) => {
+		data.allItems[type].forEach(el => {
+			// записать элемент в дату
+			const newItem = budgetCtrl.addItem(type, el.description, el.value);
+			//вывести из неё на экран
+			UIController.addListItem(newItem, type);
+			updateBudget();
+			updatePercentage();
+		});
 	};
 
 	// возврат для ФУНКЦИЯ инициализации
 	return {
 		init: function () {
+			const dataStorage = budgetController.readStorage();
 			UICtrl.displayMonth();
-			UICtrl.displayBudget({ //устанавливаем в 0 показатели при запуске 
-				budget: 0,
-				totalInc: 0,
-				totalExp: 0,
-				percentage: -1
-			});
+
+			if (dataStorage) {
+				UICtrl.displayBudget({ // выводим данные с localStorage
+					budget: dataStorage.budget,
+					totalInc: dataStorage.totals.inc,
+					totalExp: dataStorage.totals.exp,
+					percentage: dataStorage.totals.percentage
+				});
+				getLocalStorage(dataStorage, 'inc');
+				getLocalStorage(dataStorage, 'exp');
+			} else {
+				UICtrl.displayBudget({ // если еще нету localStorage, устанавливаем в 0 
+					budget: 0,
+					totalInc: 0,
+					totalExp: 0,
+					percentage: -1
+				});
+			}
+
 			setupEventListeners(); //и запускаем функцию обработки событий
 		}
 	};
@@ -413,3 +455,8 @@ var controller = (function (budgetCtrl, UICtrl) {
 })(budgetController, UIController);
 
 controller.init();
+
+// window.addEventListener('load', () => {
+// 	const newData = budgetController.data;
+// 	console.log(newData);
+// });
