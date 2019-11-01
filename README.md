@@ -1,16 +1,16 @@
 # bon9.github.io
 
-[bon9.github.io/beautySaloon](bon9.github.io/beautySaloon)
+[beautySaloon](https://bon9.github.io/beautySaloon/)
 
-[bon9.github.io/budget](bon9.github.io/budget)
+[budgetCalc](https://bon9.github.io/budget)
 
-[bon9.github.io/financeCompany(bon9.github.io/financeCompany)
+[financeCompany](https://bon9.github.io/financeCompany)
 
-[bon9.github.io/forkify](bon9.github.io/forkify)
+[forkify](https://bon9.github.io/forkify)
 
-[bon9.github.io/githubfinder](bon9.github.io/githubfinder)
+[githubfinder](https://bon9.github.io/githubfinder)
 
-[bon9.github.io/pigGame](bon9.github.io/pigGame)
+[pigGame](https://bon9.github.io/pigGame)
 
 
 
